@@ -1,0 +1,32 @@
+El reconocimiento de objetos mediante procesamiento de imágenes se encuentra en
+una época de auge, se pueden observar a diario aplicaciones orientadas a la detección
+de matrículas, ISBN, textos en general, reconocimiento de rostros y personas, etc.
+En el ámbito de desarrollo de software paleontológico las aplicaciones suelen orientarse a:
+\begin{enumerate}
+    \item Cálculo del tiempo de crecimiento de un especimen.
+    \item Implementación de bases de datos para el almacenamiento ordenado por población de
+individuos.
+\item Manipulación de imágenes para la obtención (manual) de contornos, landmarks
+y su posterior análisis. (Shape, MorphoJ, PhotoModeler).
+\item Reconstrucción 3D.
+\item Simulación de posibles capacidades motrices de un especimen.
+\item Mediciones de masa corporal, longitudes, etc.
+\end{enumerate}
+La mayoría de las aplicaciones son de carácter privativo y costoso para los grupos
+de investigación. Además, el usuario debe ingresar manualmente una numerosa
+cantidad de datos en forma iterativa, aumentando de esta manera la probabilidad de
+cargar erróneamente ciertos datos.\\[0.5cm]
+En el caso de la mayoría de las aplicaciones mencionadas se requiere una persona que tome las decisiones 
+al final del proceso, pero se podría implementar cierta inteligencia de clasificación en el software para agilizar
+el trabajo del individuo, reduciendo así la necesidad de su presencia para realizar tareas repetitivas o determinísticas 
+bajo un conjunto cerrado de decisiones.\\[0.5cm]
+Otro aspecto destacable es que existen métodos y tecnologías para obtener representaciones
+digitales de un objeto físico, como es el caso del tomógrafo, escaner laser, ultrasonido, los que  están disponibles 
+con un costo medianamente accesible, pero un método más económico aún sería la utilización de cámaras fotográficas con pie 
+para realizar tomas fijas. Es decir, si se pudieran adquirir varias fotos desde distintas perspectivas de un mismo objeto,
+y procesarlas, se podría llegar a un nivel de detalle interesante con un costo mucho más bajo, tanto monetario como de trabajo
+a la hora de tomar los datos del objeto físico.\\[0.5cm]
+En la actualidad el posicionamiento de vértebras, entre otros fósiles, está estrechamente ligado a la mirada del Paleontólogo que intenta clasificar ya que no existen métodos formales y
+automatizados que permitan obtener una aproximación de cuál sería la posición de una pieza en particular. Esto conlleva la desventaja de que el Paleontólogo toma como referencia las variaciones que conoce empíricamente, cuando en efecto, si existiera una base de conocimiento común, sería posible evaluar una pieza con mucha mayor precisión y eficacia.
+
+
