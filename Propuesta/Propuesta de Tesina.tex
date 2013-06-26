@@ -140,13 +140,21 @@ Esta tesina se centrará en la segmentacion de imágenes, en particular de Retin
 El procesado digital de imágenes aporta una ayuda inestimable al procesado de imágenes médicas, tanto en la automatización de procesos tediosos como en el apoyo a la decisión. Entre las imágenes oftalmológicas utilizadas en la actualidad por los profesionales del área se encuentran las angiografías, las imágenes de fondo de ojo o, más recientemente, el OCT. Las cuales, en su mayoria, se procesan manualmente por los profesionales del área, ocupando tiempo en tareas que pueden automatizarse.\\[0.5cm] Concretamente, el análisis de imágenes oftalmológicas permite la detección de las estructuras oculares, la medición automática de características y la detección de anomalías.[investigacionTIC]\\[0.5cm]
 Ademas, hoy en día se encuetran en desarrollo proyectos relacionados al procesamiento de imágenes oftalmológicas referentes a la retina, como lo son  SIRIUS: Estudio de la Microcirculación Retiniana y SEDAAM: Detección Automática del Área Macular.
 
+\newpage
+
 \subsection{SIRIUS}
 
 '' El objetivo de este proyecto es el desarrollo de una aplicación web para la gestión centralizada de pacientes que incorpore una herramienta para el cálculo automático del índice arterio venoso a partir de imágenes de fondo de ojo siguiendo los protocolos establecidos en la literatura médica. A partir de una retinografía en color, la aplicación aborda la detección automática del disco óptico y traza un conjunto de circunferencias concéntricas a dicha estructura. A continuación, se extraen los segmentos de vaso que intersecan las circunferencias de interés y se mide su calibre. Además, loss segmentos de vaso se clasifican en arteria o vena según su intensidad de color, al igual que los expertos médicos. Por último, se realiza el cálculo del índice arteriovenoso de acuerdo a distintos métodos matemáticos.\\
 
 La aplicación web permitirá monitorizar el estado de los pacientes y, además, proporcionará un entorno centralizado que posibilitará la realización de estudios médicos en los que intervengan distintos centros hospitalarios.   '' \cite{Sirius}
 
-AGREGAR IMAGEN
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=.5]{./Imagenes/SIRIUS2.png}
+		\caption{Software SIRIUS.}
+	\end{center}
+\end{figure} 
+
 
 
 \subsection{SEDAAM}
@@ -154,8 +162,12 @@ AGREGAR IMAGEN
 
 El proceso de localización de la mácula se basa en estudios sobre la forma y disposición de las estructuras oculares. En primer lugar, se analiza el árbol arterio-venoso vascular y se determinan cuales son los vasos principales (vasos más gruesos) que aparecen en la retina. A continuación, dichos vasos principales se ajustan a un modelo polinómico y se determina el área de interés para la localización del disco óptico. Una vez localizado y segmentado el disco óptico, se ajustan los vasos principales y el disco óptico a un modelo parabólico. Este modelo permite obtener una zona de interés para la localización de la mácula. Por último, se extrae la mácula mediante usando filtros de correlación. '' \cite{Sedaam}
 
-AGREGAR IMAGEN
-
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=.5]{./Imagenes/esquema_sirius.png}
+		\caption{Software SEDAAM.}
+	\end{center}
+\end{figure} 
 
 
 
@@ -163,7 +175,8 @@ AGREGAR IMAGEN
 
 \section{Resultados Esperados}
 
-Se espera obtener un software que permita la automatización del proceseso de Segmetanción y Medición de Imágenes de la Retina, obteniendo como resultado: imagenes segmentadas de calidad de los vasos sanguineos, información referente al análisis de dicha imagen (Medicion de vasos sanguineos).
+Se espera obtener un software que permita la automatización del proceseso de Segmetanción y Medición de Imágenes de la Retina. El cual deberá recibir una imágen de entrada (similiar a la expuesta en la la Sección 2 Figura 1), obteniendo como resultado una imágen segmentada de los vasos sanguineos (similiar a la expuesta en la la Sección 2 Figura 2). Y ademas, brindar información del estado de la retina por medio de la Medición de vasos sanguineo, dicha información sera complementada con un soporte de inteligencia artificial. 
+
 
 
 \section{Plan de Trabajo}

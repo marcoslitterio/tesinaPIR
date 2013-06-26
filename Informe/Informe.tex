@@ -221,9 +221,19 @@ En esta sección vamos a presentar varias técnicas para detectar varios tipos d
 R = \sum_{i=1}^9{w_ij_i}
 \end{center}
 
-IMAGEN 1
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=.1]{./Imagenes/mascara3x3.png}
+		\caption{Mascara 3x3.}
+	\end{center}
+\end{figure} 
 
-IMAGEN 2
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=.1]{./Imagenes/mascaraputosaislados.png}
+		\caption{Mascara detección puntos aislados.}
+	\end{center}
+\end{figure} 
 
 \subsubsection{Detección de Puntos}
 
@@ -231,9 +241,7 @@ La detección de puntos aislados es inmediata. Empleando la máscara de la ﬁgu
 
 \begin{center}
 
-\begin{gather}
-\abs{R}  T
-\end{gather}
+$ |R| > T $
 
 \end{center}
 
@@ -241,7 +249,7 @@ donde T es un umbral. Básicamente se mide la diferencia entre el pixel central 
 
 \subsubsection{Detección de Líneas}
 
-En este caso se consideran las máscaras de la ﬁgura 3. Si pasamos la primera de las máscaras a lo largo de la imagen, tendrá mayor respuesta para líneas de ancho un pixel orientadas horizontalmente. Siempre que el fondo sea uniforme, la respuesta será máxima cuando la línea pase a lo largo de la segunda ﬁla de la máscara. La segunda máscara de la ﬁgura 3 responderá mejor a líneas orientadas a 45° ; la tercera máscara a líneas verticales; y la ultima a líneas orientadas a −45° . Estas direcciones se puede establecer observando que para la dirección de interés las máscaras presentan valores mayores que para otras posibles direcciones. Si denotamos con R1 , R2 , R3 y R4 las respuestas de las cuatro máscaras de la ﬁgura 3 para un pixel en particular, entonces si se cumple que |Ri | > |Rj | con j = i, será más probable que dicho pixel esté asociado a la dirección correspondiente a la máscara i.\\
+En este caso se consideran las máscaras de la ﬁgura 3. Si pasamos la primera de las máscaras a lo largo de la imagen, tendrá mayor respuesta para líneas de ancho un pixel orientadas horizontalmente. Siempre que el fondo sea uniforme, la respuesta será máxima cuando la línea pase a lo largo de la segunda ﬁla de la máscara. La segunda máscara de la ﬁgura 3 responderá mejor a líneas orientadas a 45° ; la tercera máscara a líneas verticales; y la ultima a líneas orientadas a -45° . Estas direcciones se puede establecer observando que para la dirección de interés las máscaras presentan valores mayores que para otras posibles direcciones. Si denotamos con $ R_1 , R_2 , R_3 y R_4$ las respuestas de las cuatro máscaras de la ﬁgura 3 para un pixel en particular, entonces si se cumple que $ |R_i| > |R_j |$ con j = i, será más probable que dicho pixel esté asociado a la dirección correspondiente a la máscara i.\\
 IMAGEN 3
 
 \subsubsection{Detección de Bordes}
